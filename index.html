@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = 'stylesheet' href= 'style.css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://fonts.google.com/specimen/Josefin+Sans'>
+  <!-- displays site properly based on user's device -->
+</head>
+
+<body>
+
+  <div class='container-fluid'>
+
+  <div class='row'>
+    
+  <div class='col-md-8 background'>
+   
+  <div class ='logo'>
+    <img src="images/logo.svg" alt="My logo">
+  </div>
+
+  <div id='girl2' hidden>
+    <img class='girl2' src="images/hero-desktop.jpg" alt="A beautiful girl">
+  </div>
+
+  <div class='title'> 
+    <h1><span>W E ' R E</span><br>C O M I N G<br>S O O N</h1>
+  </div>
+  <div class ='text'>
+    <p>
+      Hello fellow shoppers! We 're currently building our new<br> fashion store.
+      Add your email below to stay up-to-date
+      with<br> announcements and our launch deals.
+    </p>
+  </div>
+  <div class='form'>
+    <input id='input' type="text" placeholder= 'Email Address' required maxlength="8" size="20">
+    <input id='btn' class ='shadow' type="button" value=">" />
+  </div>
+
+</div>
+
+<div id='girl1' class='col-md-4'>
+  <img class='girl' src="images/hero-desktop.jpg" alt="A beautiful girl">
+</div>
+
+
+</div>
+</div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+  var x = window.matchMedia("(max-width: 1200px)");
+
+  function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.getElementById('girl1').style.display = "none";
+    document.getElementById('girl2').removeAttribute("hidden"); 
+    
+  } else {
+    document.getElementById('girl2').setAttribute("hidden", false);
+    document.getElementById('girl1').style.display = "block";
+}
+  }
+  myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+</script>
+
+</body>
+
+</html>

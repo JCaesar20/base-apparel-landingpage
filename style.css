@@ -1,0 +1,120 @@
+
+body{
+    overflow: hidden;
+}
+.background{
+    background-image: linear-gradient(135deg,hsl(0, 100%, 98%), hsl(0, 0%, 100%));
+    
+}
+
+span{
+    font-family: Josefin Sans;
+    
+    color: hsl(0, 36%, 70%);
+}
+
+.girl {
+    max-height:100%;
+    position: absolute;
+    right: 0px;    
+   
+}
+
+.logo{
+
+    margin-top: 80px;
+    margin-left: 150px;
+}
+
+
+
+.title{
+   
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.text {
+    font-size: 16px;
+    color: hsl(0, 36%, 70%);
+    font-family: Josefin Sans;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+
+.form{
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-bottom: 250px;
+    width: 50%;
+    display: flex;
+    border: 1px solid ;
+    flex-direction: row;
+    border-color: hsl(0, 36%, 70%);
+    padding: 2px;
+    border-radius: 50px;
+}
+
+#input {
+    background-image: linear-gradient(135deg,hsl(0, 100%, 98%), hsl(0, 0%, 100%));
+    border-radius: 25px;
+    padding: 20px; 
+    width: 200px;
+    height: 15px;    
+    border: none;
+    border-radius: 50px;
+    flex-grow: 2;
+
+}
+
+#btn{
+  background-image: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%)  );
+  border: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 15%;
+ 
+}
+
+
+@media (max-width: 1200px) { 
+    body{
+        overflow-y: scroll;
+        background-image: linear-gradient(135deg,hsl(0, 100%, 98%), hsl(0, 0%, 100%));
+
+    }
+
+    .logo{
+        margin-left:50px;
+    }
+
+    .girl2 {
+        position:absolute;
+        left:0;
+        height:40%;
+        width:100%;  
+        margin-top: 20px;
+    }    
+
+    .title{
+        margin-top:500px;
+        margin-left: 50px;
+        text-align: center;
+    }
+    .text{
+        margin-left: 50px;
+        text-align: center;
+        margin-bottom:50px;
+    }
+
+    .form{
+        
+        margin: auto;
+
+    }
+
+}
